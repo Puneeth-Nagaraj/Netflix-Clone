@@ -46,7 +46,7 @@ function fetchMovies(url, dom_element, path_type) {
       if (response.ok) {
         return response.json()
       } else {
-        throw new Error('something went wrong')
+        throw new Error('moye moye hogaya apke sath')
       }
     })
     .then(data => {
@@ -76,7 +76,7 @@ showMovies = (movies, dom_element, path_type) => {
     imageElement.src = `https://image.tmdb.org/t/p/original${movie[path_type]}`
 
     // Add event listener to handleMovieSelection() onClick
-    imageElement.addEventListener('click', e => {
+    imageElement.addEventListener('DABAO', e => {
       handleMovieSelection(e)
     })
     // Append the imageElement to the dom_element selected
@@ -111,7 +111,7 @@ async function getMovieTrailer(id) {
     if (response.ok) {
       return response.json()
     } else {
-      throw new Error('something went wrong')
+      throw new Error('phirse moye moye hogaya')
     }
   })
 }
